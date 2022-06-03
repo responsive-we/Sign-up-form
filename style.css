@@ -1,0 +1,95 @@
+/* CSS Reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: "Oswald", sans-serif;
+}
+
+/* Fonts */
+
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+
+/* Background image */
+
+body {
+  background: url("bg.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* Main Box */
+
+.container {
+  position: absolute;
+  top: 33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 55%;
+  flex-direction: column;
+}
+
+/* Main box h1 */
+
+.container > h1 {
+  font-size: 37px;
+  margin-bottom: 35px;
+}
+
+/* Main Form Control */
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 39px 0;
+  border-bottom: 2px solid gray;
+}
+.box:nth-child(2) {
+  margin-bottom: 0px;
+}
+.box:nth-child(3) {
+  margin-top: 36px;
+}
+/* Main Form Control Input */
+
+.box input {
+  border: none;
+  outline: none;
+  margin: 3px 0;
+  font-size: 18px;
+  background: transparent;
+  width: 218px;
+}
+
+/* Main Form Control Input i */
+
+.box i::before {
+  text-align: center;
+  margin: 10px;
+  font-size: 21px;
+}
+
+/* Login Button */
+.btn {
+  cursor: pointer;
+  outline: none;
+  padding: 11px 30px;
+  color: white;
+  font-weight: bold;
+  background: transparent;
+  font-size: 18px;
+  width: 126px;
+  border: 2px solid black;
+  border-radius: 14px;
+}
+.btn-box {
+  border: none;
+}
+.btn:hover {
+  transition-property: all;
+  transition-duration: 190ms;
+  border-radius: 25px;
+  background-color: rgba(137, 43, 226, 0.472);
+}
